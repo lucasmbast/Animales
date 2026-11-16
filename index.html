@@ -1,0 +1,308 @@
+
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>El Mundo de los Animales</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f1f8e9;
+            color: #333;
+        }
+
+        /* ENCABEZADO */
+        header {
+            background: linear-gradient(135deg, #1b5e20, #66bb6a);
+            color: white;
+            text-align: center;
+            padding: 55px 20px;
+        }
+
+        header h1 {
+            font-size: 38px;
+            margin-bottom: 15px;
+        }
+
+        header p {
+            font-size: 18px;
+        }
+
+        /* MENU */
+        nav {
+            background-color: #174d25;
+            padding: 18px;
+            text-align: center;
+            position: sticky;
+            top: 0;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 18px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        nav a:hover {
+            color: #a5d6a7;
+        }
+
+        /* SECCIONES */
+        section {
+            padding: 45px 20px;
+            text-align: center;
+        }
+
+        section h2 {
+            color: #2e7d32;
+            font-size: 28px;
+            margin-bottom: 20px;
+        }
+
+        section p {
+            font-size: 17px;
+            line-height: 1.7;
+            max-width: 850px;
+            margin: auto;
+        }
+
+        /* CATEGORIAS */
+        .categorias {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 30px;
+            margin-top: 30px;
+        }
+
+        .tarjeta {
+            background-color: white;
+            width: 300px;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+            transition: transform 0.3s;
+        }
+
+        .tarjeta:hover {
+            transform: translateY(-8px);
+        }
+
+        .tarjeta img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .tarjeta h3 {
+            color: #2e7d32;
+            margin: 18px;
+            font-size: 23px;
+        }
+
+        .tarjeta p {
+            padding: 0 15px 20px;
+        }
+
+        .boton {
+            display: inline-block;
+            background-color: #2e7d32;
+            color: white;
+            text-decoration: none;
+            padding: 12px 25px;
+            border-radius: 25px;
+            margin: 15px 0 22px;
+            transition: 0.3s;
+        }
+
+        .boton:hover {
+            background-color: #1b5e20;
+        }
+
+        /* IMPORTANCIA */
+        #importancia {
+            background-color: #dcedc8;
+        }
+
+        /* FOOTER */
+        footer {
+            background-color: #174d25;
+            color: white;
+            text-align: center;
+            padding: 25px;
+        }
+
+        footer p {
+            margin: 8px;
+        }
+
+        /* CELULARES */
+        @media (max-width: 600px) {
+            header h1 {
+                font-size: 28px;
+            }
+
+            nav a {
+                display: inline-block;
+                margin: 8px;
+                font-size: 14px;
+            }
+
+            .tarjeta {
+                width: 90%;
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <!-- ENCABEZADO -->
+    <header id="inicio">
+        <h1>🐾 El Mundo de los Animales 🐾</h1>
+
+        <p>
+            Descubre, aprende y conoce la increíble diversidad
+            del reino animal.
+        </p>
+    </header>
+
+    <!-- MENU DE NAVEGACION -->
+    <nav>
+        <a href="index.html">Inicio</a>
+
+        <a href="salvajes.html">Animales Salvajes</a>
+
+        <a href="domesticos.html">Animales Domésticos</a>
+
+        <a href="#importancia">Importancia</a>
+    </nav>
+
+    <!-- BIENVENIDA -->
+    <section>
+        <h2>¡Bienvenidos a nuestra página!</h2>
+
+        <p>
+            Los animales son seres vivos fundamentales para
+            nuestro planeta. Existen miles de especies con
+            diferentes características, formas de alimentación
+            y hábitats.
+
+            En esta página podrás conocer más sobre los animales
+            salvajes y domésticos, sus características y la
+            importancia de protegerlos.
+        </p>
+    </section>
+
+    <!-- CATEGORIAS -->
+    <section id="categorias">
+
+        <h2>Explora el mundo animal</h2>
+
+        <p>
+            Selecciona una categoría para descubrir diferentes
+            especies y aprender sobre ellas.
+        </p>
+
+        <div class="categorias">
+
+            <!-- ANIMALES SALVAJES -->
+            <div class="tarjeta">
+
+                <img
+                    src="https://images.unsplash.com/photo-1546182990-dffeafbe841d?w=600"
+                    alt="León salvaje">
+
+                <h3>🦁 Animales Salvajes</h3>
+
+                <p>
+                    Conoce a los animales que viven en libertad
+                    en bosques, selvas, sabanas y otros hábitats.
+                </p>
+
+                <a href="salvajes.html" class="boton">
+                    Ver animales salvajes
+                </a>
+
+            </div>
+
+            <!-- ANIMALES DOMESTICOS -->
+            <div class="tarjeta">
+
+                <img
+                    src="https://images.unsplash.com/photo-1552053831-71594a27632d?w=600"
+                    alt="Perro doméstico">
+
+                <h3>🐶 Animales Domésticos</h3>
+
+                <p>
+                    Descubre los animales que conviven con
+                    las personas y forman parte de nuestros hogares.
+                </p>
+
+                <a href="domesticos.html" class="boton">
+                    Ver animales domésticos
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- IMPORTANCIA -->
+    <section id="importancia">
+
+        <h2>¿Por qué debemos cuidar a los animales?</h2>
+
+        <p>
+            Los animales cumplen funciones importantes en
+            los ecosistemas. Ayudan a mantener el equilibrio
+            de la naturaleza y forman parte de la biodiversidad.
+
+            Es nuestra responsabilidad proteger sus hábitats,
+            evitar el maltrato animal y respetar todas las
+            formas de vida.
+        </p>
+
+    </section>
+
+    <!-- MENSAJE FINAL -->
+    <section>
+
+        <h2>🌎 ¡Protejamos nuestro planeta!</h2>
+
+        <p>
+            Cada animal es importante.
+            Cuidar la naturaleza significa proteger la vida
+            de todas las especies.
+        </p>
+
+    </section>
+
+    <!-- PIE DE PAGINA -->
+    <footer>
+
+        <p>🐾 El Mundo de los Animales</p>
+
+        <p>Proyecto grupal - 2026</p>
+
+        <p>Aprendiendo a conocer y proteger a los animales.</p>
+
+    </footer>
+
+</body>
+</html>
